@@ -1,0 +1,7 @@
+version: '3'
+services:
+  php:
+    image: composer:2.5.8
+    command: ["composer", "create-project", "--prefer-dist", "laravel/laravel", "testing-app"]
+    volumes:
+      - .:/app
