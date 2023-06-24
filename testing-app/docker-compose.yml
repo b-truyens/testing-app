@@ -45,7 +45,7 @@ services:
 
     postgres:
         container_name: ${APP_NAME}_postgres
-        image: postgres:13-alpine
+        image: postgres:15-alpine
         environment:
             - POSTGRES_USER=${DB_USERNAME}
             - POSTGRES_PASSWORD=${DB_PASSWORD}
