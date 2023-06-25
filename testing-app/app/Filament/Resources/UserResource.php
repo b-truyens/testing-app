@@ -56,6 +56,8 @@ class UserResource extends Resource
                     ->required(fn (string $context): bool => $context === 'create'),
                 Forms\Components\Toggle::make('active')
                     ->inline(false),
+                Forms\Components\Toggle::make('is_admin')
+                    ->inline(false),
             ]);
     }
 
