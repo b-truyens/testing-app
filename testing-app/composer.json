@@ -15,6 +15,7 @@
         "laravel/tinker": "^2.8",
         "leandrocfe/filament-apex-charts": "^1.0",
         "livewire/livewire": "^2.11",
+        "riari/laravel-forum": "~5.0",
         "ryangjchandler/filament-navigation": "^0.5.0"
     },
     "require-dev": {
