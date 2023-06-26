@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "devdojo/chatter": "0.2.*",
         "filament/filament": "^2.0",
         "filament/notifications": "^2.0",
         "guzzlehttp/guzzle": "^7.2",
