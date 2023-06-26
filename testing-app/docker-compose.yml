@@ -68,6 +68,19 @@ services:
         networks:
             - network
 
+    grafana:
+        container_name: ${APP_NAME}_grafana
+        image: grafana/grafana-oss:latest
+        volumes:
+           - grafana_storage:/var/lib/grafana
+        ports:
+           - 3000:3000
+        environment:
+          - GF_SECURITY_ADMIN_USER=admin
+          - GF_SECURITY_ADMIN_PASSWORD=admin
+        networks:
+          -  network
+
 networks:
     network:
         driver: bridge
@@ -75,3 +88,4 @@ networks:
 volumes:
     mysql-data: ~
     pg-data:
+    grafana_storage:
